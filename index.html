@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>Healthcare</title>
+		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+		<!-- core bootstrap 5.2 Css -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		
+		<!-- Libraries -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<!-- custom css -->
+		<link rel="stylesheet" href="./dist/css/color.css">
+		<style type="text/css">
+			body{
+				font-family: 'Poppins', sans-serif;			
+				margin: 0;
+			}
+			.text-justify{
+				text-align: justify;
+				text-justify: inter-word;
+			}
+			.text-shadow{
+				text-shadow: 2px 3px 6px #1416198a;
+			}
+			section{
+				padding: 5rem 0 5rem;
+			}
+			.navbar{
+				transition: .5s;
+			}
+			.nav-link{
+				
+			}
+			.nav-link span:hover{
+				transform-origin: center;
+				border: 2px solid #1416198a;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+			}
+			#about{
+				background: #FF9800;
+			background: linear-gradient(to left, #FF9903, #FF9A0600);
+			}
+			/*Carousel*/
+			.carousel-caption{
+				/*padding-bottom: 10rem;*/
+			}
+			.carousel-caption h1{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				font-size: 5rem;
+				line-height: 0.9;
+			}
+			.bg1 {
+				background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('./dist/img/bg1.jpg');
+			}
+			.bg2 {
+				background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('./dist/img/bg2.jpg');
+			}
+			.bg3{
+				background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('./dist/img/bg3.jpg');
+						}
+							.bg-cover{
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+			}
+			/*Carousel*/
+		</style>
+		<script>
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		
+		document.getElementById("navbar").classList.add("navbar-dark", "bg-dark");
+		document.getElementById("offcanvasNavbar").classList.add("bg-dark", "text-light");
+				} else {
+		document.getElementById("navbar").classList.remove("navbar-dark", "bg-dark");
+		document.getElementById("offcanvasNavbar").classList.remove("bg-dark", "text-light");
+		}
+		}
+		</script>
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-xl position-fixed fixed-top py-4" id="navbar" style="background-color: #ffffffab; zoom: 200%;">
+			<div class="container-lg">
+				
+				<a class="navbar-brand d-flex" href="./"> <img src="./dist/img/test.logo.png" width="30" class="logo me-2"> US Healthcare Gateway</a>
+				<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="./" ><span>Home</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./about.php" ><span>About Us</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./candidate.php" ><span>Candidate</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./employer.php" ><span>Employer</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./referral.php" ><span>Referral</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Connect</span></a></li>
+					</ul>
+					<button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button>
+				</div>
+				
+				<div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">US Healthcare Gateway</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item"><a class="nav-link" href="./" ><span>Home</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./about.php" ><span>About Us</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./candidate.php" ><span>Candidate</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./employer.php" ><span>Employer</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./referral.php" ><span>Referral</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Connect</span></a></li>
+						</ul>
+						<button class="btn btn-warning ms-lg-2 px-5 shadow" type="submit">Apply Now!</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div id="headline">
+				<div id="myCarousel" class="carousel slide carousel-fade overflow-hidden" data-bs-ride="carousel">
+					
+					<div class="carousel-inner" >
+						<div class="carousel-item  vh-100 bg1 bg-cover">
+							<div class="container">
+								<div class="carousel-caption text-start">
+									<h1 class="text-shadow">We Make it <span class="color-amber">Easier!</span></h1>
+									<p class="lead text-shadow">We serve as a bridge to connect the interest of both communities.</p>
+									<p><a class="btn btn-warning px-5 shadow" href="#">Sign up today</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item active vh-100 bg2 bg-cover">
+							<div class="container">
+								<div class="carousel-caption">
+									<h1 class="text-shadow">Were <span class="color-amber">U.S. Healthcare Gateway</span></h1>
+									<p class="lead text-shadow">U.S. Healthcare Gateway is a network of foreign-educated healthcare professionals and U.S.-based healthcare organizations</p>
+									<p><a class="btn btn-warning px-5 shadow" href="#">Learn more</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item vh-100 bg3 bg-cover">
+							<div class="container">
+								<div class="carousel-caption text-end">
+									<h1 class="text-shadow"><span class="color-amber">Newest Platform</span></h1>
+									<p class="lead text-shadow">The platform provides a resume and credential depository for job candidates who wishes to work in the United States and a recruitment tool for job sponsors to find suitable applicants for their organization.</p>
+									<p><a class="btn btn-warning px-5 shadow" href="#">Browse gallery</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div> 
+			<section class="bg-white">
+				<div class="container">
+					<p class="lead text-justify mb-5">
+						U.S. Healthcare Gateway is a network of foreign-educated healthcare professionals and U.S.-based healthcare organizations; we serve as a bridge to connect the interest of both communities. The platform provides a resume and credential depository for job candidates who wishes to work in the United States and a recruitment tool for job sponsors to find suitable applicants for their organization.
+					</p>
+					<div class="row row-cols-1 gx-5 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col">
+							<div class="card shadow-lg border-0">
+								<img class="bd-placeholder-img coveer" width="100%" height="100%" src="./dist/img/bg-description.jpg" />
+								<div class="card-body  text-center">
+									<h2 class="">Candidate</h2>
+									<ul class="list-unstyled">
+										<li>Register</li>
+										<li>Complete Profile</li>
+										<li>Upload Document</li>
+									</ul>
+									<div class="d-grid">
+										<a href="#" class="btn btn-warning text-uppercase">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-lg border-0">
+								<img class="bd-placeholder-img coveer" width="100%" height="100%" src="./dist/img/bg3.jpg" />
+								<div class="card-body  text-center">
+									<h2 class="">Gateway</h2>
+									<ul class="list-unstyled">
+										<li>Review & Qualify </li>
+										<li>Facilitate Process</li>
+										<li>Candidate Support</li>
+									</ul>
+									<div class="d-grid">
+										<a href="#" class="btn btn-warning text-uppercase">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-lg border-0">
+								<img class="bd-placeholder-img coveer" width="100%" height="100%" src="./dist/img/employer.jpg" />
+								<div class="card-body  text-center">
+									<h2 class="">Employer</h2>
+									<ul class="list-unstyled">
+										<li>Register</li>
+										<li>View & Selec</li>
+										<li>Interview & Hir</li>
+									</ul>
+									<div class="d-grid">
+										<a href="#" class="btn btn-warning text-uppercase">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="">
+				<div class="container">
+					<div class="row gx- align-items-center">
+						<div class="col-lg-6 col-sm-12 text-center">
+							<div class="my-3 container-lg ">
+								<h2 class="display-5 mb-5 fw-bold">What is Direct Hire?</h2>
+								<p class="lead text-justify">Direct Hire is an employment process in which a hiring company (also the EB-3 Visa sponsor), offers candidate a full-time permanent position. Upon acceptance, the candidate immediately becomes an employee of the company (not an agency) with industry standard pay and benefits.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-12 text-center">
+							<img class="bd-placeholder-img shadow-lg" width="100%" height="100%" src="./dist/img/bg3.jpg" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="benefits">
+				<div class="container">
+					<div class="display-5 text-center mb-5">Benefits of Direct Hire</div>
+					<div class="row justify-content-center mb-5">
+						<div class="col-sm-12 col-lg-6">
+							<div class="card shadow card-md">
+								<div class="card-body px-5 py-5">
+									<h3 class="text-center">Candidate</h3>
+									<hr class="my-4 col-11 mx-auto" style="border-width: .3rem; border-color: #805300; border-style: solid;">
+									<ul class="list-unstyled lh-lg ps-3">
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Full-time employment</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Competitive and prevailing wage scale</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Specific role and location, not “we’ll let you know later”</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Employer compensation package not from the agency</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>No “buy-out” clause</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Offers a career choice, not assignment </li>
+									</ul>
+									<div class="d-grid">
+										<a href="#" class="btn btn-warning rounded-pill small text-uppercase py-3">Register Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-lg-6">
+							<div class="card shadow card-md">
+								<div class="card-body px-5 py-5">
+									<h3 class="text-center">Employer</h3>
+									<hr class="my-4 col-11 mx-auto" style="border-width: .3rem; border-color: #805300; border-style: solid;">
+									<ul class="list-unstyled lh-lg ps-3">
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Attracts a bigger pool of foreign candidates</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Selection control</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Better employee integration to company culture </li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Increased employee loyalty</li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Higher retention </li>
+										<li><i class="bi bi-check-lg text-lime me-2"></i>Cost effective</li>
+									</ul>
+									<div class="d-grid">
+										<a href="#" class="btn btn-warning rounded-pill small text-uppercase py-3">Register Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="lead">To protect the interest of employers that only highly qualified candidates make it in the pool of candidates, all submissions go through manual review before deposited in the pool.</div>
+					<br>
+					<div class="lead">We vet all employers to ensure they meet all EB-3 program criteria to hire foreign-educated professionals, including sound financial background, can afford to sponsor the worker, and pay the prevailing wage. Prior to the initial employment agreement, our team will conduct a site visit to make sure job sponsor practice ideal health and safety working protocols.</div>
+				</div>
+			</section>
+			<footer class="footer footer-transparent d-print-none py-5 text-light bg-dark">
+				<div class="container">
+					<div class="row align-items-start justify-content-between">
+						<div class="col-lg-auto col-sm-12">
+							<h4>Addresses</h4>
+							<address>
+								<p class="">Twitter, Inc.</p>
+								<span class="pb-2">1355 Market Street, Suite 900</span><br>
+								<span class="pb-2">San Francisco, CA 94103</span> <br>
+							<abbr title="Phone" class="pb-2">P: </abbr>(123) 456 7890
+						</address>
+						<address>
+							<strong class="mb-2">Full name</strong><br>
+							<a href="mailto:#" class="link-light pb-2">first.last@example.com</a></address>
+						</div>
+						<div class="col-lg-auto col-sm-12">
+							<hr class="d-lg-none d-sm-block" />
+							<h4>Social Media Links</h4>
+							<div class="">
+								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-facebook"></i> Facebook</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-twitter"></i> Twitter</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-instagram"></i> Instagram</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-linkedin"></i> LinkedIn</a>
+							</div>
+						</div>
+						<div class="col-lg-auto col-sm-12">
+							<hr class="d-lg-none d-sm-block" />
+							<h4>Menu</h4>
+							<div class="">
+								<a href="#" class="d-block mb-2 text-decoration-none link-light">Home</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light">About Us</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light">Candidate</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light">Employer</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light">Referral</a>
+								<a href="#" class="d-block mb-2 text-decoration-none link-light">Connect</a>
+							</div>
+						</div>
+					</div>
+
+					<hr class="d-lg-none d-sm-block" />
+					<div class="text-center">
+						Copyright &copy; 2022
+						<a href="." class="link-light">US Healthcare Gateway</a>
+						All rights reserved.
+					</div>
+				</div>
+			</footer>
+		</main>
+		<!-- end main -->
+		<!-- core bootstrap 5.2 js -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</body>
+</html>
