@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-		<title>Healthcare</title>
+		<title>Home | US Healthcare Gateway</title>
 		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
 		<!-- core bootstrap 5.2 Css -->
@@ -18,95 +18,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<!-- custom css -->
 		<link rel="stylesheet" href="./dist/css/color.css">
-		<style type="text/css">
-			body{
-				font-family: 'Poppins', sans-serif;			
-				margin: 0;
-			}
-			.text-justify{
-				text-align: justify;
-				text-justify: inter-word;
-			}
-			.text-shadow{
-				text-shadow: 2px 3px 6px #1416198a;
-			}
-			section{
-				padding: 5rem 0 5rem;
-			}
-			.navbar{
-				transition: .5s;
-			}
-			.nav-link{
-				
-			}
-			.nav-link span:hover{
-				transform-origin: center;
-				border: 2px solid #1416198a;
-				border-top: none;
-				border-left: none;
-				border-right: none;
-			}
-			#about{
-				background: #FF9800;
-			background: linear-gradient(to left, #FF9903, #FF9A0600);
-			}
-			/*Carousel*/
-			.carousel-caption{
-				/*padding-bottom: 10rem;*/
-			}
-			.carousel-caption h1{
-				font-family: 'Montserrat', sans-serif;
-				font-weight: 700;
-				font-size: 5rem;
-				line-height: 0.9;
-			}
-			.bg1 {
-				background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('./dist/img/bg1.jpg');
-			}
-			.bg2 {
-				background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('./dist/img/bg2.jpg');
-			}
-			.bg3{
-				background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('./dist/img/bg3.jpg');
-						}
-							.bg-cover{
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: center center;
-			}
-			/*Carousel*/
-		</style>
-		<script>
-		window.onscroll = function() {scrollFunction()};
-		
-		function scrollFunction() {
-		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		
-		document.getElementById("navbar").classList.add("navbar-dark", "bg-dark");
-		document.getElementById("offcanvasNavbar").classList.add("bg-dark", "text-light");
-				} else {
-		document.getElementById("navbar").classList.remove("navbar-dark", "bg-dark");
-		document.getElementById("offcanvasNavbar").classList.remove("bg-dark", "text-light");
-		}
-		}
-		</script>
+		<link rel="stylesheet" href="./dist/css/style.css"> 
+		<script src="./dist/js/main.js"></script>
 	</head>
 	<body>
 		<!-- navbar -->
 		<nav class="navbar navbar-expand-xl position-fixed fixed-top py-4" id="navbar" style="background-color: #ffffffab; zoom: 200%;">
 			<div class="container-lg">
-				
-				<a class="navbar-brand d-flex" href="./"> <img src="./dist/img/test.logo.png" width="30" class="logo me-2"> US Healthcare Gateway</a>
+				<a class="navbar-brand d-flex" href="./index.html"><img src="./dist/img/test.logo.png" width="30" class="logo mx-2"><span class="d-none d-sm-block">US Healthcare Gateway</span></a>
 				<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</div>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href="./" ><span>Home</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./about.php" ><span>About Us</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./candidate.php" ><span>Candidate</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./employer.php" ><span>Employer</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./referral.php" ><span>Referral</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Home</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./about.html" ><span>About Us</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./candidate.html" ><span>Candidate</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./employer.html" ><span>Employer</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="./referral.html" ><span>Referral</span></a></li>
 						<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Connect</span></a></li>
 					</ul>
 					<button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button>
@@ -119,11 +48,11 @@
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item"><a class="nav-link" href="./" ><span>Home</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./about.php" ><span>About Us</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./candidate.php" ><span>Candidate</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./employer.php" ><span>Employer</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./referral.php" ><span>Referral</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Home</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./about.html" ><span>About Us</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./candidate.html" ><span>Candidate</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./employer.html" ><span>Employer</span></a></li>
+							<li class="nav-item"><a class="nav-link" href="./referral.html" ><span>Referral</span></a></li>
 							<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Connect</span></a></li>
 						</ul>
 						<button class="btn btn-warning ms-lg-2 px-5 shadow" type="submit">Apply Now!</button>
@@ -254,7 +183,7 @@
 							<div class="card shadow card-md">
 								<div class="card-body px-5 py-5">
 									<h3 class="text-center">Candidate</h3>
-									<hr class="my-4 col-11 mx-auto" style="border-width: .3rem; border-color: #805300; border-style: solid;">
+									<hr class="my-4 col-11 hr mx-auto">
 									<ul class="list-unstyled lh-lg ps-3">
 										<li><i class="bi bi-check-lg text-lime me-2"></i>Full-time employment</li>
 										<li><i class="bi bi-check-lg text-lime me-2"></i>Competitive and prevailing wage scale</li>
@@ -273,7 +202,7 @@
 							<div class="card shadow card-md">
 								<div class="card-body px-5 py-5">
 									<h3 class="text-center">Employer</h3>
-									<hr class="my-4 col-11 mx-auto" style="border-width: .3rem; border-color: #805300; border-style: solid;">
+									<hr class="my-4 col-11 hr mx-auto">
 									<ul class="list-unstyled lh-lg ps-3">
 										<li><i class="bi bi-check-lg text-lime me-2"></i>Attracts a bigger pool of foreign candidates</li>
 										<li><i class="bi bi-check-lg text-lime me-2"></i>Selection control</li>
@@ -323,12 +252,12 @@
 							<hr class="d-lg-none d-sm-block" />
 							<h4>Menu</h4>
 							<div class="">
-								<a href="#" class="d-block mb-2 text-decoration-none link-light">Home</a>
-								<a href="#" class="d-block mb-2 text-decoration-none link-light">About Us</a>
-								<a href="#" class="d-block mb-2 text-decoration-none link-light">Candidate</a>
-								<a href="#" class="d-block mb-2 text-decoration-none link-light">Employer</a>
-								<a href="#" class="d-block mb-2 text-decoration-none link-light">Referral</a>
-								<a href="#" class="d-block mb-2 text-decoration-none link-light">Connect</a>
+								<a href="./index.html" class="d-block mb-2 text-decoration-none link-light">Home</a>
+								<a href="./about.html" class="d-block mb-2 text-decoration-none link-light">About Us</a>
+								<a href="./candidate.html" class="d-block mb-2 text-decoration-none link-light">Candidate</a>
+								<a href="./employer.html" class="d-block mb-2 text-decoration-none link-light">Employer</a>
+								<a href="./referral.html" class="d-block mb-2 text-decoration-none link-light">Referral</a>
+								<a href="./connect.html" class="d-block mb-2 text-decoration-none link-light">Connect</a>
 							</div>
 						</div>
 					</div>
