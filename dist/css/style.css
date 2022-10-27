@@ -1,0 +1,90 @@
+body{
+	font-family: 'Poppins', sans-serif;			
+	margin: 0; 
+	overflow-x: hidden;
+}
+.text-justify{
+	text-align: justify;
+	text-justify: inter-word;
+}
+.text-shadow{
+	text-shadow: 2px 3px 6px #1416198a;
+}
+section{
+	padding: 5rem 0 5rem;
+}
+.hr{
+	border-width: .3rem; border-color: #805300; border-style: solid;
+}
+.navbar{
+	transition: .5s;
+}
+.nav-link{
+}
+.nav-link span:hover{
+	transform-origin: center;
+	border: 2px solid #1416198a;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+#about{
+	background: #FF9800;
+background: linear-gradient(to left, #FF9903, #FF9A0600);
+}
+/*Carousel*/
+.carousel-caption{
+	/*padding-bottom: 10rem;*/
+}
+.carousel-caption h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 5rem;
+	line-height: 0.9;
+}
+.bg1 {
+	background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('../img/bg1.jpg');
+}
+.bg2 {
+	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg2.jpg');
+}
+.bg3{
+	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg3.jpg');
+}
+.bg-cover{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+/*Carousel*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 320px) {
+		section{
+		padding: 3rem 0 3rem;
+	}
+	.lead{
+		font-size: 1.1rem;
+	}
+	.carousel-caption h1{
+		font-size: 2.5rem;
+		bottom: 3rem;
+	}
+}
+/*// `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	
+}
+
+/*// `md` applies to small devices (landscape phones, less than 768px)
+*/@media (max-width: 767.98px) { ... }
+
+/*// `lg` applies to medium devices (tablets, less than 992px)
+*/@media (max-width: 991.98px) { ... }
+
+/*// `xl` applies to large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { ... }
+
+/*// `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) { ... }
+
