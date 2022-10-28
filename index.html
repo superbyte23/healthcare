@@ -24,9 +24,9 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<nav class="navbar navbar-expand-xl  py-lg-4 py-2" id="navbar" style="background-color: #ffffffab; zoom: 200%;">
+		<nav class="navbar navbar-expand-xl position-fixed fixed-top py-4" id="navbar" style="background-color: #ffffffab;">
 			<div class="container-lg">
-				<a class="navbar-brand d-flex" href="./index.html"><img src="./dist/img/test.logo.png" width="30" class="logo mx-2"><span class="d-none d-sm-block">US Healthcare Gateway</span></a>
+				<a class="navbar-brand d-flex" href="./index.html"><img src="./dist/img/test.logo.png" width="30" class="logo mx-2"><span class="">US Healthcare Gateway</span></a>
 				<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</div>
@@ -63,10 +63,9 @@
 		</nav>
 		<main>
 			<div id="headline">
-				<div id="myCarousel" class="carousel slide carousel-fade overflow-hidden" data-bs-ride="carousel">
-					
+				<div id="myCarousel" class="carousel slide carousel-fade overflow-auto" data-bs-ride="carousel">					
 					<div class="carousel-inner" >
-						<div class="carousel-item  vh-100 bg1 bg-cover">
+						<div class="carousel-item bg1 bg-cover" style="height: 100vh;">
 							<div class="container-lg">
 								<div class="carousel-caption text-start">
 									<h1 class="text-shadow">We Make it <span class="color-amber">Easier!</span></h1>
@@ -75,7 +74,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item active vh-100 bg2 bg-cover">
+						<div class="carousel-item active bg2 bg-cover" style="height: 100vh;">
 							<div class="container-lg">
 								<div class="carousel-caption">
 									<h1 class="text-shadow">Were <span class="color-amber">U.S. Healthcare Gateway</span></h1>
@@ -84,7 +83,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item vh-100 bg3 bg-cover">
+						<div class="carousel-item bg3 bg-cover" style="height: 100vh;">
 							<div class="container-lg">
 								<div class="carousel-caption text-end">
 									<h1 class="text-shadow"><span class="color-amber">Newest Platform</span></h1>
@@ -109,8 +108,8 @@
 					<p class="lead text-justify mb-5">
 						U.S. Healthcare Gateway is a network of foreign-educated healthcare professionals and U.S.-based healthcare organizations; we serve as a bridge to connect the interest of both communities. The platform provides a resume and credential depository for job candidates who wishes to work in the United States and a recruitment tool for job sponsors to find suitable applicants for their organization.
 					</p>
-					<div class="row row-cols-1 gx-5 row-cols-sm-2 row-cols-md-3 g-3">
-						<div class="col">
+					<div class="row g-3">
+						<div class="col-lg-4">
 							<div class="card shadow-lg border-0">
 								<img class="bd-placeholder-img coveer" width="100%" height="100%" src="./dist/img/bg-description.jpg" />
 								<div class="card-body  text-center">
@@ -126,7 +125,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-lg-4">
 							<div class="card shadow-lg border-0">
 								<img class="bd-placeholder-img coveer" width="100%" height="100%" src="./dist/img/bg3.jpg" />
 								<div class="card-body  text-center">
@@ -142,7 +141,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-lg-4">
 							<div class="card shadow-lg border-0">
 								<img class="bd-placeholder-img coveer" width="100%" height="100%" src="./dist/img/employer.jpg" />
 								<div class="card-body  text-center">
@@ -261,8 +260,7 @@
 								<a href="./connect.html" class="d-block mb-2 text-decoration-none link-light">Connect</a>
 							</div>
 						</div>
-					</div>
-
+					</div> 
 					<hr class="d-lg-none d-sm-block" />
 					<div class="text-center">
 						Copyright &copy; 2022

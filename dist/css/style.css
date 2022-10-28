@@ -1,3 +1,4 @@
+ 
 body{
 	font-family: 'Poppins', sans-serif;			
 	margin: 0;
@@ -30,7 +31,7 @@ section{
 	border-right: none;
 }
 #about{
-	background: #FF9800;
+background: #FF9800;
 background: linear-gradient(to left, #FF9903, #FF9A0600);
 }
 /*Carousel*/
@@ -45,17 +46,26 @@ background: linear-gradient(to left, #FF9903, #FF9A0600);
 }
 .bg1 {
 	background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('../img/bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
 }
 .bg2 {
 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .bg3{
 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
 }
 .bg-cover{
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center top;
 }
 /*Carousel*/
 
