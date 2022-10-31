@@ -23,10 +23,40 @@
 		<script src="./dist/js/main.js"></script> 
 	</head>
 	<body>
-		<!-- navbar -->
-		<nav class="navbar navbar-expand-xl position-fixed fixed-top py-4" id="navbar" style="background-color: #ffffffab;">
-			<div class="container-lg"> 
-				<a class="navbar-brand d-flex" href="./index.html"><img src="./dist/img/test.logo.png" width="30" class="logo bg-dark shadow mx-2"><span class="">US Healthcare Gateway</span></a>
+		<!-- topbar -->
+	<topbar class="topbar d-none d-lg-block bg-blue-grey">
+		<div class="container-lg">
+			<div class="d-flex justify-content-between align-items-center">
+				<div id="contact" class="d-flex">
+					<div class="contact py-1 px-3 border-end">
+						<a href="#" class="text-light text-decoration-none"><i class="bi bi-telephone"></i> (123) 456 7890</a>
+					</div>
+					<div class="email py-1 px-3">
+						<a href="#" class="text-light text-decoration-none"><i class="bi bi-envelope"></i> ushgaateway@gmail.com</a>
+					</div>
+					<div class="location py-1 px-3 border-start">
+						<a href="#" class="text-light text-decoration-none"><i class="bi bi-geo-alt"></i> 1355 Market Street, Suite 900</a>
+					</div>
+				</div>
+				<div class="d-flex justify-content-end align-items-center gap-4">
+					<a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+					<a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+					<a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+					<a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+					<a href="#" class="text-light"><i class="bi bi-google"></i></a>
+				</div> 
+			</div>
+		</div>
+	<!-- navbar -->
+	</topbar>
+		<nav class="navbar navbar-expand-xl py-4 navbar-dark bg-dark" id="navbar" style="background-color: #ffffffab;">
+			<div class="container-md d-flex align-items-center">
+				
+				<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
+					<img src="./dist/img/test.logo.png" width="30" class="me-2">
+					<span class="">US Healthcare Gateway</span>
+				</a>
 				<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</div>
@@ -42,9 +72,12 @@
 					<button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button>
 				</div>
 				
-				<div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas offcanvas-end d-xl-none navbar-dark bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">US Healthcare Gateway</h5>
+						<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
+					<img src="./dist/img/test.logo.png" width="30" class="me-2">
+					<span class="">US Healthcare Gateway</span>
+				</a>
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body">
