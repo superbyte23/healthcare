@@ -45,15 +45,22 @@
 		border-width: .3rem; border-color: #805300; border-style: solid;
 	}
 	.navbar{
-		transition: .5s;
+		/*transition: .5s;*/
 	}
-	
-	.nav-link span:hover{
-		transform-origin: center;
-		border: 2px solid #1416198a;
-		border-top: none;
-		border-left: none;
-		border-right: none;
+
+	.nav-link{
+		font-size: .9rem!important;
+	}
+	.nav-active{ 
+		font-weight: bold;
+		background-color: #FFBD30; 
+		color: #023047;
+	}
+	.nav-link:hover{
+		transition: .2s;
+		transform-origin: center; 
+		background-color: #FFBD30; 
+		color: #023047;
 	}
 	#about{
 	background: #FF9800;
@@ -66,8 +73,7 @@
 	.carousel-caption h1{
 		font-family: 'avenir_next_lt_proregular', sans-serif;
 		font-weight: 700;
-		font-size: 5rem;
-		line-height: 0.9;
+		font-size: 3rem; 
 	}
 	.bg1 {
 		background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('../img/bg1.jpg');
@@ -116,6 +122,10 @@
 	}
 	.vh-50{
 		height: 50vh;
+	}
+
+	footer{
+		font-size: 0.9rem;
 	}
 	/*Carousel*/
 
