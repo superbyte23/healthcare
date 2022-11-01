@@ -23,106 +23,116 @@
 		<!-- <script src="./dist/js/main.js"></script>  -->
 	</head>
 	<body>
-		<!-- topbar -->
-	<topbar class="topbar d-none d-lg-block theme-bg2">
+	<!-- topbar -->
+		<topbar class="topbar d-none d-lg-block theme-bg2">
 		<div class="container-lg">
 			<div class="d-flex justify-content-between align-items-center">
 				<div id="contact" class="d-flex">
 					<div class="contact py-1 px-3 border-end">
-						<a href="#" class="text-light text-decoration-none"><i class="bi bi-telephone"></i> (123) 456 7890</a>
+						<a href="#" class="nav-link text-light text-decoration-none"><i class="bi bi-telephone"></i> (123) 456 7890</a>
 					</div>
 					<div class="email py-1 px-3">
-						<a href="#" class="text-light text-decoration-none"><i class="bi bi-envelope"></i> ushgaateway@gmail.com</a>
+						<a href="#" class="nav-link text-light text-decoration-none"><i class="bi bi-envelope"></i> ushgaateway@gmail.com</a>
 					</div>
 					<div class="location py-1 px-3 border-start">
-						<a href="#" class="text-light text-decoration-none"><i class="bi bi-geo-alt"></i> 1355 Market Street, Suite 900</a>
+						<a href="#" class="nav-link text-light text-decoration-none"><i class="bi bi-geo-alt"></i> 1355 Market Street, Suite 900</a>
 					</div>
 				</div>
 				<div class="d-flex justify-content-end align-items-center gap-4">
-					<a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-google"></i></a>
-				</div> 
+					<a href="#" class="nav-link text-light"><i class="bi bi-facebook"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-instagram"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-linkedin"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-youtube"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-google"></i></a>
+				</div>
 			</div>
 		</div>
-	<!-- navbar -->
-	</topbar>
-	<nav class="navbar navbar-expand-xl py-4 navbar-dark theme-bg" id="navbar" style="background-color: #ffffffab;">
-		<div class="container-lg d-flex align-items-center">
-			
-			<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
-				<img src="./dist/img/banner.png" width="250" class="me-2">
-				<!-- <span class="">US Healthcare Gateway</span> -->
-			</a>
-			<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Home</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="./about.html" ><span>About</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="./candidate.html" ><span>Candidate</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="./employer.html" ><span>Employer</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="./referral.html" ><span>Referral</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="./connect.html" ><span>Connect</span></a></li>
-				</ul>
-				<button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button>
-			</div>
-			
-			<div class="offcanvas offcanvas-end d-xl-none navbar-dark theme-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-				<div class="offcanvas-header">
-					<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
-				<img src="./dist/img/banner.png" width="250" class="me-2">
-			</a>
-					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		<!-- navbar -->
+		</topbar>
+		<nav class="navbar navbar-expand-md py-3 navbar-dark theme-bg" id="navbar" style="background-color: #ffffffab;">
+			<div class="container-lg d-flex align-items-center justify-content-between">
+				
+				<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
+					<img src="./dist/img/banner.png" width="150" class="me-2">
+					<!-- <span class="">US Healthcare Gateway</span> -->
+				</a>
+				<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
 				</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-						<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Home</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./about.html" ><span>About</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./candidate.html" ><span>Candidate</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./employer.html" ><span>Employer</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./referral.html" ><span>Referral</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./connect.html" ><span>Connect</span></a></li>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./index.html" ><span>Home</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2 nav-active" href="./about.html" ><span>About</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./candidate.html" ><span>Candidate</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./employer.html" ><span>Employer</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./referral.html" ><span>Referral</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./connect.html" ><span>Connect</span></a></li>
 					</ul>
-					<button class="btn btn-warning shadow w-100" type="submit">Apply Now!</button>
+					<!-- <button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button> -->
+				</div>
+				
+				<div class="offcanvas offcanvas-end d-md-none navbar-dark theme-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
+							<img src="./dist/img/banner.png" width="150" class="me-2">
+						</a>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item"><a class="nav-link px-2" href="./index.html" ><span>Home</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2 nav-active" href="./about.html" ><span>About</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./candidate.html" ><span>Candidate</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./employer.html" ><span>Employer</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./referral.html" ><span>Referral</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./connect.html" ><span>Connect</span></a></li>
+						</ul>
+						<!-- <button class="btn btn-warning shadow w-100" type="submit">Apply Now!</button> -->
+					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 		<main> 
 			<!-- <main style="margin-top: 5.45rem;"> -->
-      <section class="bg-amber">
+      <section class="pb-0">
         <div class="container-lg">
-          <h1 class="text-dark display-3 fw-bold text-center text-sm-start">About Us</h1>
+          <h1 class="text-warning display-3 fw-bold text-center text-sm-start">About Us</h1>
           <span class="bi bi-quote mb-0" style="font-size: 3rem"></span>
+          <figure class="mb-5 col-12 mx-auto text-center">
+					  <blockquote class="blockquote">
+					    <p>Time and again, we are placed in a position to humble ourselves and reach out to people we do not even know and share with them an opportunity that will forever change their lives and alter the course their family’s history for generations to come…. A chance to live in one of the greatest nations in the world and experience the so-called the ‘American Dream’.</p>
+					  </blockquote>
+					  <figcaption class="blockquote-footer">
+					    Romy Baylon, <cite title="Source Title">Founder & President, U.S. Healthcare Gateway</cite>
+					  </figcaption>
+					</figure>
           <p class="mb-4 lead text-justify">Our diverse team, partners, and consultants have a combined experience of over 75 years in U.S. healthcare system, management, immigration, and skilled worker recruitment in North America. </p>
 
           <p class="lead text-justify">We understand the culture of overseas employment, the pain of family separation, the diminishing hope of achieving the American Dream due to lack of funds to pay for the required licensing and certifications, and the substantiated fear of falling victim to unscrupulous recruiters who prey on the vulnerabilities of overseas job seekers wanting the best for their family. </p>
         </div>
       </section>
-      <section class="">
-        <div class="container-lg"> 
-          <h1 class="display-6 fw-bold mb-4">Safeguarding the Welfare of Foreign Healthcare Workers</h1>
+      <section class="py-0">
+        <div class="container-lg">
+        	<hr class="hr my-5">
+          <h1 class="display-6 fw-bold mb-4 text-theme">Safeguarding the Welfare of Foreign Healthcare Workers</h1>
           <p class="lead text-muted text-justify">Although our system is designed for employers to hire registered candidates directly, we participate in the review of employment agreement on behalf of the candidates to ensure employers adhere to the U.S. government Permanent Labor Certification conditions regarding prevailing wage, are paid to employees based on the work to be performed and are guaranteed full-time permanent employment.</p>
 
-          <hr class="hr my-5">
-          <h1 class="display-6 fw-bold mb-4">Supporting U.S. Hospitals and Healthcare Systems</h1>
+   
+          <h1 class="display-6 fw-bold mb-4 text-theme">Supporting U.S. Hospitals and Healthcare Systems</h1>
           <p class="lead text-muted text-justify">Unlike job boards programmed by Artificial Intelligence (AI) with smart algorithms, we maintain the human element in the screening process of candidates to support employers’ need to hire highly qualified foreign educated healthcare professionals to their team.</p>
           <p class="lead text-muted text-justify">We are committed to be part of the solution to offset the persistent nursing shortage by maintaining a strong pipeline of highly skilled nurses and medical workers from around the globe.</p>
         </div>
       </section>
 
-      <section class="bg-info">
+      <section class="pt-0">
         <div class="container-lg">
-          <h1 class="display-6 fw-bold text-center text-sm-start mb-md-4">Our Mission</h1>
+        	<hr class="hr my-5">
+          <h1 class="display-6 fw-bold text-center text-sm-start mb-md-4 text-theme">Our Mission</h1>
           <div class="border-bottom border-5 border-dark mb-4 d-xs-block d-sm-none col-3 mx-auto"></div>
           <p class="lead text-muted text-justify">To become an agent of change and perpetuate the goodness that is inherent in us all.</p>
-          <hr class="hr my-5">
-          <h1 class="display-6 fw-bold text-center text-sm-start mb-4">Our Culture</h1>
+          <hr>
+          <h1 class="display-6 fw-bold text-center text-sm-start mb-4 text-theme">Our Culture</h1>
           <div class="border-bottom border-5 border-dark mb-4 d-xs-block d-sm-none col-3 mx-auto"></div>
           <p class="lead text-muted text-justify">Becoming part of something bigger than ourselves, something that gives us purpose and meaning.</p>
           <ul class="lead"> 
@@ -134,22 +144,21 @@
       </section> 
 			<footer class="footer footer-transparent d-print-none py-5 text-light theme-bg">
 				<div class="container-lg">
-					<div class="row align-items-start justify-content-between">
+					<div class="row align-items-start justify-content-between mb-3">
 						<div class="col-lg-auto col-sm-12">
-							<h4>Addresses</h4>
+							<!-- <h4>Addresses</h4> -->
 							<address>
-								<p class="">Twitter, Inc.</p>
-								<span class="pb-2">1355 Market Street, Suite 900</span><br>
-								<span class="pb-2">San Francisco, CA 94103</span> <br>
-							<abbr title="Phone" class="pb-2">P: </abbr>(123) 456 7890
+								<p class="">U.S. Healthcare Gateway </p>
+								<span class="pb-2">2063 Rancho Valley Dr Suite 320</span><br>
+								<span class="pb-2">Pomona, CA 91766 USA</span> <br>
+								<span title="Phone" class="pb-2">P : 909-784-5541</abbr>
 						</address>
-						<address>
-							<strong class="mb-2">Full name</strong><br>
-							<a href="mailto:#" class="link-light pb-2">first.last@example.com</a></address>
+						<address> 
+							E : <a href="mailto:#" class="link-light pb-2">connect@hgateway.com</a></address>
 						</div>
 						<div class="col-lg-auto col-sm-12">
 							<hr class="d-lg-none d-sm-block" />
-							<h4>Social Media Links</h4>
+							<!-- <h4>Social Media Links</h4> -->
 							<div class="">
 								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-facebook"></i> Facebook</a>
 								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-twitter"></i> Twitter</a>
@@ -159,7 +168,7 @@
 						</div>
 						<div class="col-lg-auto col-sm-12">
 							<hr class="d-lg-none d-sm-block" />
-							<h4>Menu</h4>
+							<!-- <h4>Menu</h4> -->
 							<div class="">
 								<a href="./index.html" class="d-block mb-2 text-decoration-none link-light">Home</a>
 								<a href="./about.html" class="d-block mb-2 text-decoration-none link-light">About</a>
@@ -169,8 +178,7 @@
 								<a href="./connect.html" class="d-block mb-2 text-decoration-none link-light">Connect</a>
 							</div>
 						</div>
-					</div>
-
+					</div> 
 					<hr class="d-lg-none d-sm-block" />
 					<div class="text-center">
 						Copyright &copy; 2022

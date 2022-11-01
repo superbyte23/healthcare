@@ -29,70 +29,72 @@
     </script>
 	</head>
 	<body>
-		<!-- topbar -->
-	<topbar class="topbar d-none d-lg-block theme-bg2">
+	<!-- topbar -->
+		<topbar class="topbar d-none d-lg-block theme-bg2">
 		<div class="container-lg">
 			<div class="d-flex justify-content-between align-items-center">
 				<div id="contact" class="d-flex">
 					<div class="contact py-1 px-3 border-end">
-						<a href="#" class="text-light text-decoration-none"><i class="bi bi-telephone"></i> (123) 456 7890</a>
+						<a href="#" class="nav-link text-light text-decoration-none"><i class="bi bi-telephone"></i> (123) 456 7890</a>
 					</div>
 					<div class="email py-1 px-3">
-						<a href="#" class="text-light text-decoration-none"><i class="bi bi-envelope"></i> ushgaateway@gmail.com</a>
+						<a href="#" class="nav-link text-light text-decoration-none"><i class="bi bi-envelope"></i> ushgaateway@gmail.com</a>
 					</div>
 					<div class="location py-1 px-3 border-start">
-						<a href="#" class="text-light text-decoration-none"><i class="bi bi-geo-alt"></i> 1355 Market Street, Suite 900</a>
+						<a href="#" class="nav-link text-light text-decoration-none"><i class="bi bi-geo-alt"></i> 1355 Market Street, Suite 900</a>
 					</div>
 				</div>
 				<div class="d-flex justify-content-end align-items-center gap-4">
-					<a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
-					<a href="#" class="text-light"><i class="bi bi-google"></i></a>
-				</div> 
+					<a href="#" class="nav-link text-light"><i class="bi bi-facebook"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-instagram"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-twitter"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-linkedin"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-youtube"></i></a>
+					<a href="#" class="nav-link text-light"><i class="bi bi-google"></i></a>
+				</div>
 			</div>
 		</div>
-	<!-- navbar -->
-	</topbar>
-		<nav class="navbar navbar-expand-xl py-4 navbar-dark theme-bg" id="navbar" style="background-color: #ffffffab;">
-			<div class="container-lg d-flex align-items-center">
+		<!-- navbar -->
+		</topbar>
+		<nav class="navbar navbar-expand-md py-3 navbar-dark theme-bg" id="navbar" style="background-color: #ffffffab;">
+			<div class="container-lg d-flex align-items-center justify-content-between">
 				
 				<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
-					<img src="./dist/img/banner.png" width="250" class="me-2">
+					<img src="./dist/img/banner.png" width="150" class="me-2">
+					<!-- <span class="">US Healthcare Gateway</span> -->
 				</a>
 				<div class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 				</div>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Home</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./about.html" ><span>About</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./candidate.html" ><span>Candidate</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./employer.html" ><span>Employer</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./referral.html" ><span>Referral</span></a></li>
-						<li class="nav-item"><a class="nav-link" href="./connect.html" ><span>Connect</span></a></li>
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./index.html" ><span>Home</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./about.html" ><span>About</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./candidate.html" ><span>Candidate</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./employer.html" ><span>Employer</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2" href="./referral.html" ><span>Referral</span></a></li>
+						<li class="nav-item mx-1"><a class="nav-link px-2 nav-active" href="./connect.html" ><span>Connect</span></a></li>
 					</ul>
-					<button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button>
+					<!-- <button class="btn btn-warning ms-2 px-5 shadow" type="submit">Apply Now!</button> -->
 				</div>
 				
-				<div class="offcanvas offcanvas-end d-xl-none navbar-dark theme-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas offcanvas-end d-md-none navbar-dark theme-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 					<div class="offcanvas-header">
-						<img src="./dist/img/banner.png" width="250" class="me-2">
-				</a>
+						<a class="navbar-brand d-flex me-0 pt-0 me-2 " href="./index.html">
+							<img src="./dist/img/banner.png" width="150" class="me-2">
+						</a>
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-							<li class="nav-item"><a class="nav-link" href="./index.html" ><span>Home</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./about.html" ><span>About</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./candidate.html" ><span>Candidate</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./employer.html" ><span>Employer</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./referral.html" ><span>Referral</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="./connect.html" ><span>Connect</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./index.html" ><span>Home</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./about.html" ><span>About</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./candidate.html" ><span>Candidate</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./employer.html" ><span>Employer</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2" href="./referral.html" ><span>Referral</span></a></li>
+							<li class="nav-item"><a class="nav-link px-2 nav-active" href="./connect.html" ><span>Connect</span></a></li>
 						</ul>
-						<button class="btn btn-warning shadow w-100" type="submit">Apply Now!</button>
+						<!-- <button class="btn btn-warning shadow w-100" type="submit">Apply Now!</button> -->
 					</div>
 				</div>
 			</div>
@@ -108,19 +110,20 @@
 			<section class="">
 				<div class="container-lg">
           <div class="container">
-            <h1 class="text-theme fw-bold text-center text-sm-start">Connect</h1>
+            <h1 class="text-warning display-3 fw-bold text-center text-sm-start">Connect</h1>
             <p class="lead">We’re here to help and answer any questions you might have. We look forward to hearing from you.</p>
-            <form class="row g-3" id="sendform">
+            <hr class="container-xl hr mx-auto my-5">
+            <form class="row g-3" id="sendform" method="POST" action="">
               <div class="col-md-6">
-                <label for="firstname" class="form-label">First Name</label>
+                <label for="firstname" class="form-label"><span class="text-danger">*</span> First Name</label>
                 <input type="text" class="form-control" id="firstname">
               </div>
               <div class="col-md-6">
-                <label for="lastame" class="form-label">Last Name</label>
+                <label for="lastame" class="form-label"><span class="text-danger">*</span> Last Name</label>
                 <input type="password" class="form-control" id="lastname">
               </div>
               <div class="col-md-12">
-                <label for="inputState" class="form-label">Are you</label>
+                <label for="inputState" class="form-label"><span class="text-danger">*</span> Are you</label>
                 <select id="inputState" class="form-select">
                   <option>A Cadidate</option>
                   <option>An Employer</option>
@@ -128,35 +131,35 @@
                 </select>
               </div>
               <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label"><span class="text-danger">*</span> Email</label>
                 <input type="email" class="form-control" id="email">
               </div>
               <div class="col-md-6">
-                <label for="phone" class="form-label">Phone</label>
+                <label for="phone" class="form-label"><span class="text-danger">*</span> Phone</label>
                 <input type="text" class="form-control" id="phone">
               </div> 
               <div class="col-md-3">
-                <label for="city" class="form-label">City</label>
+                <label for="city" class="form-label"><span class="text-danger">*</span> City</label>
                 <input type="text" class="form-control" id="city">
               </div>
               <div class="col-md-3">
-                <label for="state" class="form-label">State</label>
+                <label for="state" class="form-label"><span class="text-danger">*</span> State</label>
                 <input type="text" class="form-control" id="state">
               </div>
               <div class="col-md-6">
-                <label for="country" class="form-label">Country</label>
+                <label for="country" class="form-label"><span class="text-danger">*</span> Country</label>
                 <input type="text" class="form-control" id="country">
               </div>
               <div class="col-12">
                  
-                <label for="message" class="form-label">Message</label>
+                <label for="message" class="form-label"><span class="text-danger">*</span> Message</label>
                 <textarea name="" class="form-control" cols="30" rows="10" id="message"></textarea>
               </div>
               <div class="col-12"> 
                 <div class="g-recaptcha" data-sitekey="6Lde28wiAAAAAKmkv77e_ulBG90znr4eSUEi9NNY"></div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Send Message</button>
+                <button type="submit" class="btn theme-bg px-5 text-light"><i class="bi bi-send"></i> Send Message</button>
               </div>
             </form>
           </div>
@@ -165,22 +168,21 @@
 
 			<footer class="footer footer-transparent d-print-none py-5 text-light theme-bg">
 				<div class="container-lg">
-					<div class="row align-items-start justify-content-between">
+					<div class="row align-items-start justify-content-between mb-3">
 						<div class="col-lg-auto col-sm-12">
-							<h4>Addresses</h4>
+							<!-- <h4>Addresses</h4> -->
 							<address>
-								<p class="">Twitter, Inc.</p>
-								<span class="pb-2">1355 Market Street, Suite 900</span><br>
-								<span class="pb-2">San Francisco, CA 94103</span> <br>
-							<abbr title="Phone" class="pb-2">P: </abbr>(123) 456 7890
+								<p class="">U.S. Healthcare Gateway </p>
+								<span class="pb-2">2063 Rancho Valley Dr Suite 320</span><br>
+								<span class="pb-2">Pomona, CA 91766 USA</span> <br>
+								<span title="Phone" class="pb-2">P : 909-784-5541</abbr>
 						</address>
-						<address>
-							<strong class="mb-2">Full name</strong><br>
-							<a href="mailto:#" class="link-light pb-2">first.last@example.com</a></address>
+						<address> 
+							E : <a href="mailto:#" class="link-light pb-2">connect@hgateway.com</a></address>
 						</div>
 						<div class="col-lg-auto col-sm-12">
 							<hr class="d-lg-none d-sm-block" />
-							<h4>Social Media Links</h4>
+							<!-- <h4>Social Media Links</h4> -->
 							<div class="">
 								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-facebook"></i> Facebook</a>
 								<a href="#" class="d-block mb-2 text-decoration-none link-light"><i class="bi bi-twitter"></i> Twitter</a>
@@ -190,7 +192,7 @@
 						</div>
 						<div class="col-lg-auto col-sm-12">
 							<hr class="d-lg-none d-sm-block" />
-							<h4>Menu</h4>
+							<!-- <h4>Menu</h4> -->
 							<div class="">
 								<a href="./index.html" class="d-block mb-2 text-decoration-none link-light">Home</a>
 								<a href="./about.html" class="d-block mb-2 text-decoration-none link-light">About</a>
@@ -200,7 +202,7 @@
 								<a href="./connect.html" class="d-block mb-2 text-decoration-none link-light">Connect</a>
 							</div>
 						</div>
-					</div>
+					</div> 
 					<hr class="d-lg-none d-sm-block" />
 					<div class="text-center">
 						Copyright &copy; 2022
