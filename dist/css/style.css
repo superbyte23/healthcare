@@ -1,131 +1,139 @@
-@font-face {
-    font-family: 'avenir_next_lt_probold';
-    src: url('./fonts/avenirnextltpro-bold-webfont.woff2') format('woff2'),
-         url('./fonts/avenirnextltpro-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	@font-face {
+	    font-family: 'avenir_next_lt_probold';
+	    src: url('./fonts/avenirnextltpro-bold-webfont.woff2') format('woff2'),
+	         url('./fonts/avenirnextltpro-bold-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
 
-}
-@font-face {
-    font-family: 'avenir_next_lt_proitalic';
-    src: url('./fonts/avenirnextltpro-it-webfont.woff2') format('woff2'),
-         url('./fonts/avenirnextltpro-it-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'avenir_next_lt_proitalic';
+	    src: url('./fonts/avenirnextltpro-it-webfont.woff2') format('woff2'),
+	         url('./fonts/avenirnextltpro-it-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
 
-}
+	}
 
-@font-face {
-    font-family: 'avenir_next_lt_proregular';
-    src: url('./fonts/avenirnextltpro-regular-webfont.woff2') format('woff2'),
-         url('./fonts/avenirnextltpro-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	@font-face {
+	    font-family: 'avenir_next_lt_proregular';
+	    src: url('./fonts/avenirnextltpro-regular-webfont.woff2') format('woff2'),
+	         url('./fonts/avenirnextltpro-regular-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
 
-}
+	}
 
 
-body{
-	font-family: 'avenir_next_lt_proregular', sans-serif;			
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-}
-.text-justify{
-	text-align: justify;
-	text-justify: inter-word;
-}
-.text-shadow{
-	text-shadow: 2px 3px 6px #1416198a;
-}
-section{
-	padding: 5rem 0 5rem;
-}
-.hr{
-	border-width: .3rem; border-color: #805300; border-style: solid;
-}
-.navbar{
-	transition: .5s;
-}
-.nav-link{
-}
-.nav-link span:hover{
-	transform-origin: center;
-	border: 2px solid #1416198a;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-}
-#about{
-background: #FF9800;
-background: linear-gradient(to left, #FF9903, #FF9A0600);
-}
-/*Carousel*/
-.carousel-caption{
-	/*padding-bottom: 10rem;*/
-}
-.carousel-caption h1{
-	font-family: 'avenir_next_lt_proregular', sans-serif;
-	font-weight: 700;
-	font-size: 5rem;
-	line-height: 0.9;
-}
-.bg1 {
-	background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('../img/bg1.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-.bg2 {
-	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-.bg3{
-	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg3.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-.bg4 {
-	/*height: 30rem;*/
- 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg_candidate.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
+	body{
+		font-family: 'avenir_next_lt_proregular', sans-serif;			
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	.text-justify{
+		text-align: justify;
+		text-justify: inter-word;
+	}
+	.text-shadow{
+		text-shadow: 2px 3px 6px #1416198a;
+	}
+	section{
+		padding: 5rem 0 5rem;
+	}
+	.hr{
+		border-width: .3rem; border-color: #805300; border-style: solid;
+	}
+	.navbar{
+		transition: .5s;
+	}
+	
+	.nav-link span:hover{
+		transform-origin: center;
+		border: 2px solid #1416198a;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+	#about{
+	background: #FF9800;
+	background: linear-gradient(to left, #FF9903, #FF9A0600);
+	}
+	/*Carousel*/
+	/* .carousel-caption{
+		padding-bottom: 10rem;
+	} */
+	.carousel-caption h1{
+		font-family: 'avenir_next_lt_proregular', sans-serif;
+		font-weight: 700;
+		font-size: 5rem;
+		line-height: 0.9;
+	}
+	.bg1 {
+		background: linear-gradient(rgba(0,0,0,0), #1416198a),  url('../img/bg1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+	.bg2 {
+		background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+	.bg3{
+		background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg3.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+	.bg4 {
+		/*height: 30rem;*/
+	 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg_candidate.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
 
-.bg5 { 
- 	/*background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/employer2.jpg');*/
- 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/employer2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-.vh-90{
-	height: 90vh;
-}
-.vh-50{
-	height: 50vh;
-}
-/*Carousel*/
+	.bg5 { 
+	 	/*background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/employer2.jpg');*/
+	 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/employer2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+	
+	.referral{
+			/*background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/employer2.jpg');*/
+	 	background:  linear-gradient(rgba(0,0,0,0), #1416198a), url('../img/bg_candidate2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center left;
 
-/* For Desktop View */
-@media screen and (min-width: 1024px) {
-  
-}
- 
-/* For Tablet View */
-@media screen and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-   
-}
- 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {
-   .carousel-caption h1{
+	}
+	.vh-90{
+		height: 90vh;
+	}
+	.vh-50{
+		height: 50vh;
+	}
+	/*Carousel*/
+
+	/* For Desktop View */
+	@media screen and (min-width: 1024px) {
+	  
+	}
+	 
+	/* For Tablet View */
+	@media screen and (min-device-width: 768px)
+	and (max-device-width: 1024px) {
+	   
+	}
+	 
+	/* For Mobile Portrait View */
+	@media screen and (max-device-width: 480px)
+	and (orientation: portrait) {
+		.carousel-caption h1{
 		font-size: 2.5rem;
 		bottom: 3rem;
 		}
@@ -139,37 +147,36 @@ and (orientation: portrait) {
 			font-size: smaller;
 		}
 	}
-}
- 
-/* For Mobile Landscape View */
-@media screen and (max-device-width: 640px)
-and (orientation: landscape) {
-   
-}
- 
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-   
-}
- 
-/* For iPhone 4 Portrait or Landscape View */
-@media screen and (min-device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-   
-}
- 
-/* For iPhone 5 Portrait or Landscape View */
-@media (device-height: 568px) and (device-width: 320px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel-caption h1{
-		font-size: 1rem;
-		bottom: 3rem;
+	 
+	/* For Mobile Landscape View */
+	@media screen and (max-device-width: 640px)
+	and (orientation: landscape) {
+	   
 	}
-}
- 
-/* For iPhone 6 and 6 plus Portrait or Landscape View */
-@media (min-device-height: 667px) and (min-device-width: 375px)
-and (-webkit-min-device-pixel-ratio: 3) {
-   
-}
+	 
+	/* For Mobile Phones Portrait or Landscape View */
+	@media screen and (max-device-width: 640px) {
+	   
+	}
+	 
+	/* For iPhone 4 Portrait or Landscape View */
+	@media screen and (min-device-width: 320px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+	   
+	}
+	 
+	/* For iPhone 5 Portrait or Landscape View */
+	@media (device-height: 568px) and (device-width: 320px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+	  .carousel-caption h1{
+			font-size: 1rem;
+			bottom: 3rem;
+		}
+	}
+	 
+	/* For iPhone 6 and 6 plus Portrait or Landscape View */
+	@media (min-device-height: 667px) and (min-device-width: 375px)
+	and (-webkit-min-device-pixel-ratio: 3) {
+	   
+	}
 

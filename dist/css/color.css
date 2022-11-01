@@ -115,11 +115,18 @@
   color: #607D8B!important;
 }
 
+.theme-bg{
+  background-color: #023047!important;
+}
+
+.theme-bg2{
+  background-color: #001219!important;
+}
 
 .color-theme{
-  background-color: #00D7FF!important;
+  background-color: #023e8a!important;
   color: #fff!important;
 }
 .text-theme{
-  color: #00D7FF!important;
+  color: #023e8a!important;
 }
