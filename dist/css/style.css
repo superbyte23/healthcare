@@ -47,6 +47,25 @@
 	.navbar{
 		/*transition: .5s;*/
 	}
+	.list-item{
+		font-size: 1.2rem;
+	}
+	/*Divider 2*/
+
+	.text-divider {
+  display: flex;
+  align-items: center; // align text and lines vertically
+}
+
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  height: 5px;
+  background-color: #E0D5C0;
+  flex-grow: 1; // both lines will expand to occupy the available space
+}
+
+/*end*/
 
 	.nav-link{
 		font-size: .9rem!important;
