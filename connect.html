@@ -21,12 +21,9 @@
 		<link rel="stylesheet" href="./dist/css/color.css">
 		<link rel="stylesheet" href="./dist/css/style.css">
 		<!-- <script src="./dist/js/main.js"></script> -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-      function onSubmit(token) {
-        document.getElementById("sendform").submit();
-      }
-    </script>
+		
+    
+    
 	</head>
 	<body>
 	<!-- topbar -->
@@ -114,18 +111,18 @@
             <p class="lead">We’re here to help and answer any questions you might have. We look forward to hearing from you.</p>
             <hr class="container-xl hr mx-auto my-5">
             <div class="col-lg-6">
-            	<form class="row g-3" id="sendform" method="POST" action="">
+            	<form class="row g-3" id="sendform" method="POST" action="connect.html">
 	              <div class="col-md-6">
 	                <label for="firstname" class="form-label"><span class="text-danger">*</span> First Name</label>
-	                <input type="text" class="form-control" id="firstname">
+	                <input type="text" class="form-control" id="firstname" required>
 	              </div>
 	              <div class="col-md-6">
 	                <label for="lastame" class="form-label"><span class="text-danger">*</span> Last Name</label>
-	                <input type="password" class="form-control" id="lastname">
+	                <input type="text" class="form-control" id="lastname" required>
 	              </div>
 	              <div class="col-md-12">
-	                <label for="inputState" class="form-label"><span class="text-danger">*</span> Are you</label>
-	                <select id="inputState" class="form-select">
+	                <label for="type" class="form-label"><span class="text-danger">*</span> Are you</label>
+	                <select id="type" class="form-select" required>
 	                  <option>A Cadidate</option>
 	                  <option>An Employer</option>
 	                  <option>Other</option> 
@@ -133,23 +130,23 @@
 	              </div>
 	              <div class="col-md-6">
 	                <label for="email" class="form-label"><span class="text-danger">*</span> Email</label>
-	                <input type="email" class="form-control" id="email">
+	                <input type="email" class="form-control" id="email" required>
 	              </div>
 	              <div class="col-md-6">
 	                <label for="phone" class="form-label"><span class="text-danger"></span> Phone</label>
-	                <input type="text" class="form-control" id="phone">
+	                <input type="text" class="form-control" id="phone" required>
 	              </div> 
 	              <div class="col-md-3">
 	                <label for="city" class="form-label"><span class="text-danger">*</span> City</label>
-	                <input type="text" class="form-control" id="city">
+	                <input type="text" class="form-control" id="city" required>
 	              </div>
 	              <div class="col-md-3">
 	                <label for="state" class="form-label"><span class="text-danger">*</span> State</label>
-	                <input type="text" class="form-control" id="state">
+	                <input type="text" class="form-control" id="state" required>
 	              </div>
 	              <div class="col-md-6">
 	                <label for="country" class="form-label"><span class="text-danger">*</span> Country</label>
-	                <input type="text" class="form-control" id="country">
+	                <input type="text" class="form-control" id="country" required>
 	              </div>
 	              <div class="col-12">
 	                 
@@ -160,7 +157,7 @@
 	                <div class="g-recaptcha" data-sitekey="6Lde28wiAAAAAKmkv77e_ulBG90znr4eSUEi9NNY"></div>
 	              </div>
 	              <div class="col-12">
-	                <button type="submit" class="btn theme-bg px-5 text-light"><i class="bi bi-send"></i> Send Message</button>
+	                <button type="submit" onclick="backend_API_challenge()" class="btn theme-bg px-5 text-light"><i class="bi bi-send"></i> Send Message</button>
 	              </div>
 	            </form>
             </div>
@@ -216,6 +213,17 @@
 		</main>
 		<!-- end main -->
 		<!-- core bootstrap 5.2 js -->
-		<script src="./dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./dist/js/bootstrap.bundle.min.js"></script> 
+  	<script src='https://www.google.com/recaptcha/api.js' async defer></script> 
+		<script>
+			document.getElementById("sendform").addEventListener("submit",function(evt){
+				var response = grecaptcha.getResponse();
+				if(response.length == 0){
+					alert("please verify you are humann!");
+					evt.preventDefault();
+					return false;
+				}
+			});
+		</script> 
 	</body>
 </html>
