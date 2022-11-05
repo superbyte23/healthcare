@@ -99,7 +99,7 @@
 				</div>
 			</div>
 		</nav>
-		<main> 
+		<main class="flex-shrink-0"> 
 		<!-- <main style="margin-top: 5.45rem;"> -->
 			<!-- <section class="vh-50 referral">
         <div class="container-lg">
@@ -113,60 +113,62 @@
             <h1 class="text-warning display-3 fw-bold text-center text-sm-start">Connect</h1>
             <p class="lead">We’re here to help and answer any questions you might have. We look forward to hearing from you.</p>
             <hr class="container-xl hr mx-auto my-5">
-            <form class="row g-3" id="sendform" method="POST" action="">
-              <div class="col-md-6">
-                <label for="firstname" class="form-label"><span class="text-danger">*</span> First Name</label>
-                <input type="text" class="form-control" id="firstname">
-              </div>
-              <div class="col-md-6">
-                <label for="lastame" class="form-label"><span class="text-danger">*</span> Last Name</label>
-                <input type="password" class="form-control" id="lastname">
-              </div>
-              <div class="col-md-12">
-                <label for="inputState" class="form-label"><span class="text-danger">*</span> Are you</label>
-                <select id="inputState" class="form-select">
-                  <option>A Cadidate</option>
-                  <option>An Employer</option>
-                  <option>Other</option> 
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label"><span class="text-danger">*</span> Email</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="col-md-6">
-                <label for="phone" class="form-label"><span class="text-danger">*</span> Phone</label>
-                <input type="text" class="form-control" id="phone">
-              </div> 
-              <div class="col-md-3">
-                <label for="city" class="form-label"><span class="text-danger">*</span> City</label>
-                <input type="text" class="form-control" id="city">
-              </div>
-              <div class="col-md-3">
-                <label for="state" class="form-label"><span class="text-danger">*</span> State</label>
-                <input type="text" class="form-control" id="state">
-              </div>
-              <div class="col-md-6">
-                <label for="country" class="form-label"><span class="text-danger">*</span> Country</label>
-                <input type="text" class="form-control" id="country">
-              </div>
-              <div class="col-12">
-                 
-                <label for="message" class="form-label"><span class="text-danger">*</span> Message</label>
-                <textarea name="" class="form-control" cols="30" rows="10" id="message"></textarea>
-              </div>
-              <div class="col-12"> 
-                <div class="g-recaptcha" data-sitekey="6Lde28wiAAAAAKmkv77e_ulBG90znr4eSUEi9NNY"></div>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn theme-bg px-5 text-light"><i class="bi bi-send"></i> Send Message</button>
-              </div>
-            </form>
+            <div class="col-lg-6">
+            	<form class="row g-3" id="sendform" method="POST" action="">
+	              <div class="col-md-6">
+	                <label for="firstname" class="form-label"><span class="text-danger">*</span> First Name</label>
+	                <input type="text" class="form-control" id="firstname">
+	              </div>
+	              <div class="col-md-6">
+	                <label for="lastame" class="form-label"><span class="text-danger">*</span> Last Name</label>
+	                <input type="password" class="form-control" id="lastname">
+	              </div>
+	              <div class="col-md-12">
+	                <label for="inputState" class="form-label"><span class="text-danger">*</span> Are you</label>
+	                <select id="inputState" class="form-select">
+	                  <option>A Cadidate</option>
+	                  <option>An Employer</option>
+	                  <option>Other</option> 
+	                </select>
+	              </div>
+	              <div class="col-md-6">
+	                <label for="email" class="form-label"><span class="text-danger">*</span> Email</label>
+	                <input type="email" class="form-control" id="email">
+	              </div>
+	              <div class="col-md-6">
+	                <label for="phone" class="form-label"><span class="text-danger"></span> Phone</label>
+	                <input type="text" class="form-control" id="phone">
+	              </div> 
+	              <div class="col-md-3">
+	                <label for="city" class="form-label"><span class="text-danger">*</span> City</label>
+	                <input type="text" class="form-control" id="city">
+	              </div>
+	              <div class="col-md-3">
+	                <label for="state" class="form-label"><span class="text-danger">*</span> State</label>
+	                <input type="text" class="form-control" id="state">
+	              </div>
+	              <div class="col-md-6">
+	                <label for="country" class="form-label"><span class="text-danger">*</span> Country</label>
+	                <input type="text" class="form-control" id="country">
+	              </div>
+	              <div class="col-12">
+	                 
+	                <label for="message" class="form-label"><span class="text-danger">*</span> Message</label>
+	                <textarea name="" class="form-control" cols="30" rows="10" id="message"></textarea>
+	              </div>
+	              <div class="col-12"> 
+	                <div class="g-recaptcha" data-sitekey="6Lde28wiAAAAAKmkv77e_ulBG90znr4eSUEi9NNY"></div>
+	              </div>
+	              <div class="col-12">
+	                <button type="submit" class="btn theme-bg px-5 text-light"><i class="bi bi-send"></i> Send Message</button>
+	              </div>
+	            </form>
+            </div>
           </div>
         </div>
       </section> 
 
-			<footer class="footer footer-transparent d-print-none py-5 text-light theme-bg">
+			<footer class="footer footer-transparent d-print-none py-5 mt-auto text-light theme-bg">
 				<div class="container-lg">
 					<div class="row align-items-start justify-content-between mb-3">
 						<div class="col-lg-auto col-sm-12">

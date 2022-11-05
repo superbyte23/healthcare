@@ -60,22 +60,34 @@
 .text-divider::before,
 .text-divider::after {
   content: '';
-  height: 5px;
+  height: 3px;
   background-color: #E0D5C0;
   flex-grow: 1; // both lines will expand to occupy the available space
+}
+.startqoute {
+  transform: rotate(180deg);   
+}
+.endqoute {
+	transform: rotate(180deg);  
+  transform: scale(1, -1); 
+}
+li{
+	line-height: 2!important;
 }
 
 /*end*/
 
-	.nav-link{
+	.navbar .nav-link{
 		font-size: .9rem!important;
+		border-top-left-radius: 15px;
+		border-bottom-right-radius: 15px; 
 	}
 	.nav-active{ 
-		font-weight: bold;
+		/*font-weight: bold;*/
 		background-color: #FFBD30; 
 		color: #023047;
 	}
-	.nav-link:hover{
+	.navbar .nav-link:hover{
 		transition: .2s;
 		transform-origin: center; 
 		background-color: #FFBD30; 
@@ -134,7 +146,6 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center left;
-
 	}
 	.vh-90{
 		height: 90vh;
