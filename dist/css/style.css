@@ -82,6 +82,10 @@ li{
 		border-top-left-radius: 15px;
 		border-bottom-right-radius: 15px; 
 	}
+	.navbar-brand img{
+		/*Logo*/
+		width: 320px;
+	}
 	.nav-active{ 
 		/*font-weight: bold;*/
 		background-color: #FFBD30; 
