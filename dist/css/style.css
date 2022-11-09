@@ -94,8 +94,9 @@ li{
 		color: #023047;
 	}
 	#about{
-	background: #FF9800;
-	background: linear-gradient(to left, #FF9903, #FF9A0600);
+	background: #023047;
+	/*background: linear-gradient(to left, #023047, #FF9A0600)*/
+	background: linear-gradient(138deg, rgb(2 48 71), rgb(2 48 71 / 45%));
 	}
 	/*Carousel*/
 	/* .carousel-caption{
